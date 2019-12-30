@@ -49,7 +49,6 @@ export default {
     height: calc(100% - 105px);
     .lf_content {
       margin: 10px 0;
-      padding: 0 0 10px 0;
       float: left;
       width: calc(100% - 280px);
       height: calc(100% - 10px);
