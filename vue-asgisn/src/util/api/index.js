@@ -1,6 +1,6 @@
 import axios from 'axios'
 let http = axios.create({
-  baseURL: 'http://localhost:3000/api',
+  baseURL: 'http://118.190.104.43:3000/api',
   headers: {
     'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8'
   },

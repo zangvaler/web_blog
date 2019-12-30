@@ -28,20 +28,17 @@ export default new Vuex.Store({
             commit('SET_INITBLOG_DATA', response.data.data.list)
             resolve(response.data.data.list)
           } else {
-            console.log('出错了...')
           }
         })
       })
     },
     updataBlog ({ commit }, data) {
       return new Promise((resolve, reject) => {
-        console.log(data);
         axios.post(apiURL.MODIFYBLOG, data, response => {
           if (response.status >= 200 && response.status < 300) {
             commit('SET_INITBLOG_DATA', data)
             resolve(data)
           } else {
-            console.log('出错了...')
           }
         })
       })
